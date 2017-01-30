@@ -1,0 +1,6 @@
+<div ng-repeat='story in news'>
+    <div class='story'>
+        <td><span class="number">{{$index + 1}}.</span></td> <span class="arrow"><img src="https://news.ycombinator.com/grayarrow.gif"> </span><a href='{{story.url}}'>{{story.title}}</a><small> ({{story.domain}})</small>
+<div class='small-print'>{{story.points}} points by {{story.user}} <span am-time-ago='story.time | amFromUnix'></span> | hide |<a ui-sref='item({id:story.id})'>{{story.comments_count}} comments</a>| save to pocket </div>
+</div>
+</div>

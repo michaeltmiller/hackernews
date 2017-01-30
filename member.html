@@ -1,0 +1,5 @@
+<div class='comments'><span class="comment-title"><li>{{member.user}} <span am-time-ago='member.time | amFromUnix'></span><span class="button" ng-click='ToggleView=!ToggleView; toggle = !toggle'><span ng-show="toggle">  [+]</span>
+    <span ng-hide="toggle">  [-]</span></span></span>
+    <div ng-hide='ToggleView' class="comment-text" ng-bind-html='member.content'>{{member.content}}</div>
+    </li>
+</div>

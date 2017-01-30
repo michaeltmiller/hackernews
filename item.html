@@ -1,0 +1,16 @@
+<div>
+    <div>
+        <div class='item'>
+            <ul><li><a href='{{item.url}}'>{{item.title}}</a><small>({{item.domain}})</small></li></ul>
+<div class='small-print'>{{item.points}} points by {{item.user}} <span am-time-ago='item.time | amFromUnix'></span> | hide |<a ui-sref='item({id:item.id})'>{{item.comments_count}} comments</a> | save to pocket </div>
+</div>
+    </div>
+    </div>
+
+</ul>
+<div ng-controller="itemCtrl">
+  <collection collection='item.comments'></collection>
+</div>
+     
+
+
